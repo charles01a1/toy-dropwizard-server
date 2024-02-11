@@ -34,7 +34,7 @@ jobs:
         python-version: '3.7'
     - run: pip install pytest requests
     - name: Run system tests
-      working-directory:
+      working-directory: .
       run: pytest
     - name: Bring server down
       working-directory:
