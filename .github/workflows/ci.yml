@@ -34,8 +34,8 @@ jobs:
         python-version: '3.7'
     - run: pip install pytest requests
     - name: Run system tests
-      working-directory: .
-      run: pytest
+      working-directory: 
+      run: python3 -m pytest Test_example.py
     - name: Bring server down
       working-directory:
       run: docker-compose down
